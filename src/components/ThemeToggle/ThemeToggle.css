@@ -1,0 +1,32 @@
+.theme-toggle {
+  display: inline-flex;
+  background: #2a2e3f;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.theme-toggle__btn {
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.theme-toggle__btn:hover {
+  background: #3a3e4f;
+  color: #e0e0e0;
+}
+
+.theme-toggle__btn--active {
+  background: #3a3e4f;
+  color: #e0e0e0;
+}

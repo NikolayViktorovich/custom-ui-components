@@ -1,0 +1,50 @@
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: #3a3e4f;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.toggle:hover {
+  background: #454a5f;
+}
+
+.toggle--checked {
+  background: #5b6ef5;
+}
+
+.toggle--checked:hover {
+  background: #4a5dd4;
+}
+
+.toggle__slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle--checked .toggle__slider {
+  transform: translateX(24px);
+}
+
+.toggle-label {
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 500;
+}

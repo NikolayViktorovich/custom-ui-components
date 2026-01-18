@@ -1,0 +1,30 @@
+.button-group {
+  display: inline-flex;
+  background: #2a2e3f;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.button-group__item {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #9ca3af;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.button-group__item:hover {
+  color: #e0e0e0;
+  background: #3a3e4f;
+}
+
+.button-group__item--active {
+  background: #3a3e4f;
+  color: #e0e0e0;
+}

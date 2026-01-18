@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  background: #252836;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  font-family: inherit;
+}
+
+.card:hover {
+  background: #2a2e3f;
+  transform: translateY(-2px);
+}
+
+.card--selected {
+  border-color: #5b6ef5;
+  background: #2f3447;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__radio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #4a4e5f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.card--selected .card__radio {
+  border-color: #5b6ef5;
+  background: #5b6ef5;
+}
+
+.card__radio-dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card--selected .card__radio-dot {
+  opacity: 1;
+}
+
+.card__title {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card__icon {
+  color: #6b7280;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.card--selected .card__icon {
+  color: #5b6ef5;
+  transform: scale(1.1);
+}
+
+.card--premium {
+  background: linear-gradient(135deg, #2a2e4f 0%, #3a3e5f 100%);
+}
+
+.card--premium.card--selected {
+  background: linear-gradient(135deg, #3a3e5f 0%, #4a4e6f 100%);
+}

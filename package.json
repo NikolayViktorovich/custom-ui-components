@@ -1,0 +1,25 @@
+{
+  "name": "ui-kit",
+  "version": "1.0.0",
+  "description": "UI-KIT",
+  "author": "Nikolay Viktorovich",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.0",
+    "@storybook/addon-interactions": "^7.6.0",
+    "@storybook/addon-links": "^7.6.0",
+    "@storybook/react": "^7.6.0",
+    "@storybook/react-vite": "^7.6.0",
+    "storybook": "^7.6.0",
+    "vite": "^5.0.0"
+  }
+}
